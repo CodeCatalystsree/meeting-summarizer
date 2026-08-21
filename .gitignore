@@ -1,0 +1,26 @@
+# Environment variables
+.env
+
+# Uploaded audio
+uploads/*
+!uploads/.gitkeep
+
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# React / Node
+frontend/node_modules/
+frontend/build/
+
+# Whisper cache
+.cache/
+
+# OS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
