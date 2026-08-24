@@ -7,7 +7,7 @@
 
 ---
 
-## 📌 Executive Overview
+## Executive Overview
 
 **Meeting Summarizer** is an automated end-to-end intelligence tool designed for modern teams. It converts raw audio recordings into:
 1. **Verbatim & High-Accuracy Transcript**: Powered by OpenAI Whisper ASR.
@@ -17,7 +17,7 @@
 
 ---
 
-## 🏗️ Architecture & Data Pipeline
+## Architecture & Data Pipeline
 
 ```
   ┌─────────────────┐
@@ -55,17 +55,17 @@
 
 ---
 
-## 🚀 Key Features & Highlights
+## Key Features & Highlights
 
-- 🎤 **Multi-Format Audio Support**: Transcribe `.mp3`, `.wav`, `.m4a`, `.ogg`, `.flac`, and `.webm` files.
-- ⚡ **Zero-Config Out-of-the-Box Local Execution**: Automatically defaults to SQLite (`sqlite:///meeting_summarizer.db`) so no database setup or Docker container is required for local execution.
-- 🤖 **Structured LLM Prompting**: Guarantees parseable JSON output separating executive summary, key decisions, and action items with `owner` and `due_date`.
-- 🔄 **Interactive Deliverable Tracking**: Toggle task completion status in real-time from the web interface.
-- 🎯 **Evaluation Ready Demo Mode**: Includes 1-click audio demo generator to evaluate transcription & summarization pipeline without requiring audio file uploads.
+- **Multi-Format Audio Support**: Transcribe `.mp3`, `.wav`, `.m4a`, `.ogg`, `.flac`, and `.webm` files.
+- **Zero-Config Out-of-the-Box Local Execution**: Automatically defaults to SQLite (`sqlite:///meeting_summarizer.db`) so no database setup or Docker container is required for local execution.
+- **Structured LLM Prompting**: Guarantees parseable JSON output separating executive summary, key decisions, and action items with `owner` and `due_date`.
+- **Interactive Deliverable Tracking**: Toggle task completion status in real-time from the web interface.
+- **Evaluation Ready Demo Mode**: Includes 1-click audio demo generator to evaluate transcription & summarization pipeline without requiring audio file uploads.
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 | Layer | Component | Description |
 |---|---|---|
@@ -77,7 +77,7 @@
 
 ---
 
-## 📥 Installation & Setup Instructions
+## Installation & Setup Instructions
 
 ### Prerequisites
 - **Python 3.9+**
@@ -122,7 +122,7 @@ The React web application opens on **`http://localhost:3000`**.
 
 ---
 
-## 📑 LLM Prompting Strategy
+## LLM Prompting Strategy
 
 The LLM summarization pipeline in `llm_service.py` uses system instructions with JSON schema enforcement:
 
@@ -146,7 +146,7 @@ The output MUST strictly be a valid JSON object matching this schema:
 
 ---
 
-## 📡 REST API Endpoint Reference
+## REST API Endpoint Reference
 
 | Method | Endpoint | Description |
 |---|---|---|
@@ -161,7 +161,7 @@ The output MUST strictly be a valid JSON object matching this schema:
 
 ---
 
-## 📋 Repository Cleanliness Checklist
+## Repository Cleanliness Checklist
 
 - [x] Branch: `main`
 - [x] Excluded `node_modules/`
