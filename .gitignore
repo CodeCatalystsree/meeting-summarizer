@@ -10,10 +10,12 @@ venv/
 __pycache__/
 *.pyc
 *.pyo
+*.db
 
 # React / Node
 frontend/node_modules/
 frontend/build/
+frontend/dist/
 
 # Whisper cache
 .cache/
