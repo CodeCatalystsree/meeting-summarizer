@@ -17,6 +17,13 @@
 
 ---
 
+## Demo Video
+
+Watch a complete video walkthrough of audio upload, transcript generation, LLM summarization, and task tracking:
+- [Watch Demo Video on Loom](https://www.loom.com/share/58f123327cb64dea9788ff168b91119d)
+
+---
+
 ## Architecture & Data Pipeline
 
 ```
